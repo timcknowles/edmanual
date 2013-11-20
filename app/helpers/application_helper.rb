@@ -8,7 +8,8 @@ module ApplicationHelper
     presenter.css = "top-bar-section"
     presenter.dom_id = nil
     presenter.menu_tag = :section
-    #presenter.list_tag = "ul class='left'"
+    #presenter.list_tag = "li class='has-dropdown'"
+    #presenter.list_item_tag = "ul class='dropdown'"
     presenter
   end
 end
