@@ -23,7 +23,15 @@
   </head>
 
   <body>
-    <%= zurb_menu.to_html%>
+    <nav class="top-bar hide-for-small">
+    <ul class="title-area">
+
+        <li class="name">
+        <h1><a href="/">Home</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <%=zurb_menu.to_html%>
 
     <%= yield %>
 
