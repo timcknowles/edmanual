@@ -22,18 +22,20 @@
 
   </head>
 
-  <body>
-    <nav class="top-bar">
-    <ul class="title-area">
+<body>
+  <div class="row">
+    <nav class="top-bar"> 
+      <ul class="title-area">
+      
+
+          <li class="name">
+            <h1><a href="/">St Marys ED: Local Guidelines</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <%=zurb_menu.to_html%>
+  </div>
     
-
-        <li class="name">
-          <h1><a href="/">St Marys ED: Local Guidelines</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-    <%=zurb_menu.to_html%>
-
     <%= yield %>
 
     

@@ -1,5 +1,12 @@
-<%= render_content_page(@page, {
-      :hide_sections => local_assigns[:hide_sections],
-      :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
-    }) %>
-<%= render '/refinery/draft_page_message' unless @page.try(:live?) -%>
+<div class="row">
+  <section id='body_content' class="large-10 columns">
+    <%=raw @page.content_for(:body) %>
+  
+  </section>
+
+
+  <section id='side_body_content' class="large-2 columns">
+    <%=raw @page.content_for(:side_body) %>
+  </section>
+  
+</div>

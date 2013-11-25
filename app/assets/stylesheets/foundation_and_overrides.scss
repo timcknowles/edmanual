@@ -67,6 +67,7 @@
 
 // $row-width: 62.5em;
 // $column-gutter: 1.875em;
+ //  $column-gutter: emCalc(60px);
 // $total-columns: 12;
 
 //
@@ -1008,5 +1009,13 @@ $topbar-bg: #68264D;
 //$topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout nb default 940
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
 
+//#body_content{
+//  background: red;
+  
+//}
+ 
+//#side_body_content{
+// background: black;
+//}
 
 @import 'foundation';
