@@ -53,6 +53,8 @@ EdManual::Application.configure do
     # config.action_mailer.raise_delivery_errors = false
   end
 
+  ENV["RAILS_ASSET_ID"] = "" # disable timestamps at end of asset files for offline browsing
+
   # Enable threaded mode
   # config.threadsafe!
 
